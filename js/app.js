@@ -30,6 +30,8 @@ function initEditorialNavigation() {
   function closeMobileMenu() {
     if (siteHeader && siteHeader.classList.contains('menu-open')) {
       siteHeader.classList.remove('menu-open');
+      document.body.classList.remove('menu-open');
+      document.documentElement.classList.remove('menu-open');
       if (btnMobileMenu) {
         btnMobileMenu.setAttribute('aria-expanded', 'false');
       }
@@ -39,6 +41,13 @@ function initEditorialNavigation() {
   function toggleMobileMenu() {
     if (!siteHeader) return;
     const isOpen = siteHeader.classList.toggle('menu-open');
+    if (isOpen) {
+      document.body.classList.add('menu-open');
+      document.documentElement.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+      document.documentElement.classList.remove('menu-open');
+    }
     if (btnMobileMenu) {
       btnMobileMenu.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     }
@@ -107,6 +116,17 @@ function initEditorialNavigation() {
 
   if (mobileNavBackdrop) {
     mobileNavBackdrop.addEventListener('click', closeMobileMenu);
+    mobileNavBackdrop.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+  }
+
+  if (siteHeader) {
+    siteHeader.addEventListener('touchmove', (e) => {
+      if (siteHeader.classList.contains('menu-open') && !e.target.closest('.chapter-nav-wrapper')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
   }
 
   // Tutup menu saat menekan tombol Escape
