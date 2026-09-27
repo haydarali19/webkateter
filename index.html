@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edukasi Perawatan Kateter Urine Jangka Panjang di Rumah untuk Lansia</title>
+  <meta name="description" content="Media edukasi mandiri perawatan kateter urine jangka panjang di rumah untuk lansia guna mencegah infeksi saluran kemih (CAUTI). Berbasis sintesis 3 jurnal penelitian urologi nasional.">
+  
+  <!-- Typography: Lora (Warm Classic Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       SOLID STICKY HEADER & INTEGRATED CHAPTER NAVBAR
+       ==================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand-wrapper" data-target-tab="beranda">
+        <div class="brand-emblem-logo">
+          <!-- Medical Shield with Cross & Care Droplet -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M12 8v8"/>
+            <path d="M8 12h8"/>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <h1>KATETER LANSIA</h1>
+          <span class="brand-sub">Panduan Perawatan Kateter Urine di Rumah</span>
+        </div>
+      </a>
+
+      <!-- Header Controls: Mobile Menu Toggle Button (Visible only <= 768px) -->
+      <div class="header-controls">
+        <button type="button" class="btn-mobile-menu" id="btnMobileMenu" aria-label="Buka Menu Bab" aria-expanded="false" aria-controls="chapterNavWrapper">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span class="btn-menu-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Chapter Navigation (Desktop Segmented Track / Mobile Dropdown Drawer) -->
+    <nav class="chapter-nav-wrapper" id="chapterNavWrapper" aria-label="Daftar Bab Edukasi">
+      <div class="container nav-inner-container">
+        <ul class="chapter-nav-list" id="chapterNavList">
+          <li>
+            <button type="button" class="chapter-nav-item active" data-tab="beranda">
+              Beranda
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="faktor-risiko">
+              Faktor Risiko
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="foley">
+              Kateter Foley
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="cic">
+              Edukasi CIC
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="deteksi">
+              Deteksi Dini
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="checklist">
+              Lembar Kontrol
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="kuis">
+              Evaluasi
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chapter-nav-item" data-tab="referensi">
+              Kepustakaan
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <!-- ================= PRINT HEADER ONLY ================= -->
+  <div class="print-only-header">
+    <h2 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.25rem;">LEMBAR KONTROL HARIAN PERAWATAN KATETER URINE GERIATRI</h2>
+    <p style="font-size: 0.85rem; color: #555;">Standar Higiene dan Pencegahan Catheter-Associated UTI (CAUTI) di Rumah</p>
+    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 6px 0; margin-top: 10px;">
+      <div>Nama Lansia: ____________________________________</div>
+      <div>Tanggal: _________________________________________</div>
+      <div>Nama Caregiver: _________________________________</div>
+      <div>Paraf: ___________________________________________</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         BAB 01: BERANDA
+         ==================================================================== -->
+    <section id="beranda" class="tab-pane active" aria-labelledby="chapter-01">
+      <div class="container">
+        
+        <!-- Cover Feature -->
+        <div class="cover-feature">
+          <h2 class="cover-title">
+            Perawatan Kateter Urine Jangka Panjang di Rumah untuk <em>Lansia</em>
+          </h2>
+
+          <p class="cover-text">
+            Panduan komprehensif bagi keluarga dan caregiver lansia dalam mempertahankan sirkuit drainase tertutup, mengenali tanda bahaya infeksi, dan memutus mata rantai <em>Catheter-Associated Urinary Tract Infection</em> (CAUTI) di rumah berdasarkan bukti ilmiah terkini.
+          </p>
+
+          <div class="cover-cta-row">
+            <a href="#faktor-risiko" class="btn-editorial-primary" data-target-tab="faktor-risiko">
+              Mulai Pelajari Materi &rarr;
+            </a>
+            <a href="#deteksi" class="btn-editorial-secondary" data-target-tab="deteksi">
+              Skrining Tanda Bahaya ISK &rarr;
+            </a>
+            <a href="#checklist" class="btn-editorial-secondary" data-target-tab="checklist">
+              Lembar Kontrol Harian &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Pilar Klinis Keselamatan Kateter -->
+        <div class="clinical-pillars-grid">
+          
+          <div class="pillar-card">
+            <h3>Sirkuit Tertutup Steril</h3>
+            <p>Sambungan selang kateter dan kantung urine pantang diputus atau dibilas mandiri di rumah. Sirkuit tertutup adalah benteng utama pencegahan masuknya jutaan bakteri.</p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Drainase Selalu Lebih Rendah</h3>
+            <p>Kantung urine wajib selalu menggantung lebih rendah dari kandung kemih lansia (&lt;30 cm). Menaruh kantung di kasur memicu aliran balik (refluks) kuman (Asda et al., 2024).</p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Fiksasi Paha &amp; Usap Sentrifugal</h3>
+            <p>Selang wajib direkatkan pada paha lansia guna mencegah mikrolesi uretra saat bergerak, serta meatus kelamin diseka satu arah minimal 2 kali sehari (Kumala et al., 2023).</p>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <div></div>
+          <a href="#faktor-risiko" class="btn-nav-next" data-target-tab="faktor-risiko">
+            Lanjut: Faktor Risiko &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 02: FAKTOR RISIKO KEJADIAN ISK
+         ==================================================================== -->
+    <section id="faktor-risiko" class="tab-pane" aria-labelledby="chapter-02">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Faktor Risiko Kejadian Infeksi Saluran Kemih (ISK)</h2>
+          <p class="chapter-deck">
+            Memahami patogenesis kolonisasi bakteri pada selang kateter dan faktor-faktor yang memperbesar risiko infeksi saluran kemih (CAUTI) pada pasien lansia di rumah.
+          </p>
+        </div>
+
+        <div class="story-lead-box">
+          <h3>Apa itu Catheter-Associated UTI (CAUTI)?</h3>
+          <p>
+            <strong>Infeksi Saluran Kemih Terkait Kateter (CAUTI)</strong> adalah infeksi saluran kemih yang terjadi pada individu yang sedang atau pernah terpasang kateter urine dalam kurun waktu 48 jam terakhir.
+          </p>
+          <p style="margin-bottom: 0;">
+            Pada pasien geriatri, penurunan imunitas alami mukosa uretra dan imobilitas fisik menjadikan pencegahan kolonisasi bakteri sebagai prioritas utama perawatan mandiri di rumah.
+          </p>
+        </div>
+
+        <!-- Infografis Patogenesis Biofilm 3 Tahap -->
+        <div class="biofilm-infographic-box">
+          <div class="biofilm-infographic-header">
+            <h3>Mekanisme Masuknya Bakteri pada Kateter (Patogenesis Biofilm)</h3>
+            <p>Bagaimana mikroorganisme patogen menembus pertahanan uretra dan menimbulkan infeksi:</p>
+          </div>
+
+          <div class="pathogenesis-stages-grid">
+            <div class="stage-card">
+              <h4>1. Kolonisasi &amp; Adhesi Awal (Jam 0 s.d. 24)</h4>
+              <p>Bakteri flora kulit atau perineum (seperti <em>E. coli</em> atau <em>Enterococcus</em>) menempel pada permukaan luar selang kateter saat insersi atau akibat kebersihan meatus yang kurang.</p>
+            </div>
+
+            <div class="stage-card">
+              <h4>2. Pembentukan Matriks Biofilm (Hari 3 s.d. 7)</h4>
+              <p>Bakteri berkembang biak dan memproduksi lendir polisakarida (biofilm) di dinding lumen selang. Biofilm ini kebal terhadap antibiotik biasa dan tidak bisa hilang hanya dengan pembilasan.</p>
+            </div>
+
+            <div class="stage-card">
+              <h4>3. Aliran Balik &amp; Bakteriuria Akut (Hari > 7 / Refluks)</h4>
+              <p>Jika kantung terangkat di atas kandung kemih atau selang tertekuk, urine kotor mengalir balik membawa koloni kuman menembus kandung kemih, memicu sistitis hingga urosepsis geriatri.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Titik Rawan: TAMPILAN 2x2 -->
+        <span class="section-label">4 Titik Rawan Berdasarkan Riset Medis Nasional</span>
+        
+        <div class="risk-cards-grid">
+          
+          <!-- Card 1 -->
+          <div class="risk-card">
+            <h3>1. Durasi Lama Pemasangan Kateter</h3>
+            <p class="risk-desc">
+              Riset <strong>Kumala et al. (2023)</strong> membuktikan bahwa lama hari pemakaian kateter adalah faktor paling dominan pemicu ISK. Risiko bakteriuria meningkat sebesar <strong>3% hingga 10% setiap hari</strong> kateter terpasang. Pada hari ke-30, kolonisasi kuman di selang mencapai hampir 100%.
+            </p>
+            <div class="caregiver-action-box">
+              <span class="action-label">Tindakan Pencegahan di Rumah:</span>
+              <p>Konsultasikan secara rutin dengan dokter spesialis untuk evaluasi apakah kateter sudah dapat dilepas (*weaning/trial off*) atau diganti dengan metode berkala (CIC).</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="risk-card">
+            <h3>2. Pelanggaran Hukum Gravitasi Kantung</h3>
+            <p class="risk-desc">
+              Penelitian oleh <strong>Asda, Rabiah, &amp; Maryam (2024)</strong> di RSUD Undata menunjukkan bahwa posisi kantung penampung urine yang sejajar atau lebih tinggi dari kandung kemih meningkatkan risiko infeksi hingga <strong>3.8 kali lipat</strong> akibat aliran balik urine kotor.
+            </p>
+            <div class="caregiver-action-box">
+              <span class="action-label">Tindakan Pencegahan di Rumah:</span>
+              <p>Gantungkan urine bag selalu di bawah tinggi panggul lansia (30 cm di bawah kasur). Jangan pernah menaruh kantung di atas kasur saat memandikan atau membalik posisi pasien.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="risk-card">
+            <h3>3. Ketiadaan Fiksasi Kateter di Paha</h3>
+            <p class="risk-desc">
+              Selang kateter yang dibiarkan menggantung bebas tanpa plester fiksasi akan tergelincir atau tertarik (traksi) saat lansia berguling di ranjang. Gesekan mekanis ini merobek lapisan epitel uretra, memicu perdarahan mikroskopis dan menjadi pintu masuk kuman.
+            </p>
+            <div class="caregiver-action-box">
+              <span class="action-label">Tindakan Pencegahan di Rumah:</span>
+              <p>Rekatkan selang kateter pada paha bagian atas lansia menggunakan plester medis berpori. Berikan kelonggaran yang cukup agar selang tidak kencang saat kaki ditekuk.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="risk-card">
+            <h3>4. Higiene Tangan &amp; Dekontaminasi Caregiver</h3>
+            <p class="risk-desc">
+              Flora normal tangan caregiver (seperti <em>Staphylococcus aureus</em> dan kuman coliform) dapat berpindah ke sambungan kateter saat pengosongan kantung atau pembersihan perineal yang dilakukan tanpa mencuci tangan aseptik terlebih dahulu.
+            </p>
+            <div class="caregiver-action-box">
+              <span class="action-label">Tindakan Pencegahan di Rumah:</span>
+              <p>Wajib mencuci tangan 6 langkah menggunakan air mengalir dan sabun selama 40–60 detik sebelum dan sesudah menyentuh peralatan kateter lansia.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#beranda" class="btn-nav-prev" data-target-tab="beranda">
+            &larr; Beranda
+          </a>
+          <a href="#foley" class="btn-nav-next" data-target-tab="foley">
+            Lanjut: Kateter Foley &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 03: STANDAR PERAWATAN KATETER MENETAP (FOLEY)
+         ==================================================================== -->
+    <section id="foley" class="tab-pane" aria-labelledby="chapter-03">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Standar Perawatan Kateter Menetap (Foley)</h2>
+          <p class="chapter-deck">
+            Pedoman Standar Operasional Prosedur (SOP) higienitas harian di rumah untuk mempertahankan sirkuit drainase tertutup dan mencegah trauma uretra.
+          </p>
+        </div>
+
+        <div class="story-lead-box">
+          <h3>Prinsip Utama: Closed Drainage System (Sistem Tertutup)</h3>
+          <p style="margin-bottom: 0;">
+            Sistem kateter menetap adalah rangkaian steril tertutup. Sambungan antara selang kateter dan kantung urine <strong>TIDAK BOLEH diputus atau dilepas sembarangan</strong> di rumah. Melepas sambungan ini membuka gerbang kontaminasi patogen dari lingkungan luar secara langsung.
+          </p>
+        </div>
+
+        <!-- 4 Pedoman Langkah Prosedur -->
+        <span class="section-label">4 Pedoman Prosedur Perawatan Harian</span>
+        <div class="guidance-steps-grid">
+          
+          <div class="guidance-card">
+            <span class="step-eyebrow">Langkah 01</span>
+            <h4>Cuci Tangan 6 Langkah Aseptik</h4>
+            <p>Wajib mencuci tangan dengan sabun cair dan air mengalir minimal 40-60 detik sesuai standar WHO sebelum dan sesudah menyentuh peralatan kateter.</p>
+          </div>
+
+          <div class="guidance-card">
+            <span class="step-eyebrow">Langkah 02</span>
+            <h4>Pembersihan Meatus Sentrifugal</h4>
+            <p>Bersihkan lubang kemih dan selang sepanjang 10 cm minimal 2 kali sehari menggunakan air hangat matang. Selalu usap satu arah menjauhi meatus (tidak boleh bolak-balik).</p>
+          </div>
+
+          <div class="guidance-card">
+            <span class="step-eyebrow">Langkah 03</span>
+            <h4>Fiksasi Selang pada Paha Lansia</h4>
+            <p>Rekatkan selang kateter di paha bagian atas menggunakan plester medis berpori. Berikan kelonggaran yang cukup agar selang tidak tertarik kencang saat bergerak.</p>
+          </div>
+
+          <div class="guidance-card">
+            <span class="step-eyebrow">Langkah 04</span>
+            <h4>Pengosongan Urine Bag Terjadwal</h4>
+            <p>Kosongkan kantung penampung sebelum terisi 2/3 kapasitas (~500ml). Jaga agar ujung katup pengeluaran tidak menyentuh bibir wadah penampung atau lantai.</p>
+          </div>
+
+        </div>
+
+        <!-- Matriks Do's & Don'ts -->
+        <span class="section-label">Matriks Keamanan: Boleh Dilakukan vs Pantangan Keras</span>
+        <div class="advice-columns-grid">
+          
+          <div class="advice-journal-col col-dos">
+            <div class="col-header-row">
+              <h3>Protokol yang Dianjurkan (Do's)</h3>
+            </div>
+            <ul class="editorial-check-list">
+              <li>
+                <span class="list-mark-check">&check;</span>
+                <div><strong>Kantung Selalu di Bawah Pinggang:</strong> Pastikan kantung urine selalu menggantung lebih rendah dari kandung kemih lansia (Asda et al., 2024).</div>
+              </li>
+              <li>
+                <span class="list-mark-check">&check;</span>
+                <div><strong>Hidrasi Adekuat:</strong> Berikan air minum cukup (1.5 - 2 liter/hari) sepanjang tidak ada pembatasan cairan dari dokter spesialis jantung/ginjal.</div>
+              </li>
+              <li>
+                <span class="list-mark-check">&check;</span>
+                <div><strong>Periksa Bebas Tekukan:</strong> Pastikan alur selang bebas dari tekukan (<em>kinking</em>) atau jepitan sprei tempat tidur.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="advice-journal-col col-donts">
+            <div class="col-header-row">
+              <h3>Pantangan yang Dilarang Keras (Don'ts)</h3>
+            </div>
+            <ul class="editorial-check-list">
+              <li>
+                <span class="list-mark-cross">&times;</span>
+                <div><strong>JANGAN Letakkan Kantung di Kasur:</strong> Meletakkan urine bag sejajar dengan perut memicu aliran balik jutaan bakteri ke kandung kemih.</div>
+              </li>
+              <li>
+                <span class="list-mark-cross">&times;</span>
+                <div><strong>JANGAN Flushing Mandiri:</strong> Membilas selang kateter sendiri dengan cairan antiseptik atau rebusan daun di rumah sangat berbahaya dan merusak sterilitas.</div>
+              </li>
+              <li>
+                <span class="list-mark-cross">&times;</span>
+                <div><strong>JANGAN Tarik Paksa Kateter:</strong> Bila selang macet atau merembes, segera hubungi perawat atau dokter, jangan mencabut selang sendiri.</div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#faktor-risiko" class="btn-nav-prev" data-target-tab="faktor-risiko">
+            &larr; Faktor Risiko
+          </a>
+          <a href="#cic" class="btn-nav-next" data-target-tab="cic">
+            Lanjut: Edukasi CIC &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 04: EDUKASI CLEAN INTERMITTENT CATHETERIZATION (CIC)
+         ==================================================================== -->
+    <section id="cic" class="tab-pane" aria-labelledby="chapter-04">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Edukasi Clean Intermittent Catheterization (CIC)</h2>
+          <p class="chapter-deck">
+            Panduan teknik kateterisasi berkala bersih mandiri untuk pasien lansia dengan retensi urine atau inkontinensia neurogenik guna menekan risiko infeksi jangka panjang.
+          </p>
+        </div>
+
+        <div class="story-lead-box">
+          <h3>Apa itu Clean Intermittent Catheterization (CIC)?</h3>
+          <p>
+            <strong>Clean Intermittent Catheterization (CIC)</strong> atau Kateterisasi Berkala Bersih adalah prosedur pengosongan kandung kemih secara berkala (tiap 4-6 jam) menggunakan kateter lurus sekali pakai atau kateter bersih yang segera dilepas setelah urine tuntas mengalir.
+          </p>
+          <p style="margin-bottom: 0;">
+            Berdasarkan <strong>Jurnal Sewaka Bhakti (2023)</strong>, edukasi CIC terbukti efektif meningkatkan kemandirian lansia/caregiver dan secara drastis mengurangi komplikasi kolonisasi kuman yang sering terjadi pada kateter menetap.
+          </p>
+        </div>
+
+        <!-- 3 Keunggulan CIC -->
+        <span class="section-label">3 Keunggulan Klinis Edukasi CIC</span>
+        <div class="clinical-pillars-grid">
+          
+          <div class="pillar-card">
+            <h3>Tanpa Selang Menetap</h3>
+            <p>Dengan meniadakan selang yang terpasang terus-menerus di saluran kemih, bakteri tidak memiliki media untuk membentuk lapisan lendir biofilm yang kebal antibiotik.</p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Memulihkan Sirkulasi Kandung Kemih</h3>
+            <p>Kandung kemih dapat terisi dan mengosong secara periodik mendekati siklus biologis alami organ kemih, mempertahankan elastisitas dinding otot detrusor.</p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Mobilitas Tanpa Beban Kantung</h3>
+            <p>Lansia tidak perlu terbebani membawa kantung urine menggantung saat beraktivitas harian di rumah, mengurangi kecemasan tersangkut dan menjaga martabat pasien.</p>
+          </div>
+
+        </div>
+
+        <span class="section-label">4 Langkah Prosedur CIC Bersih di Rumah</span>
+        <div class="guidance-steps-grid">
+          
+          <div class="guidance-card">
+            <span class="step-eyebrow">Tahap 01</span>
+            <h4>Cuci Tangan &amp; Persiapan Alat</h4>
+            <p>Cuci tangan 6 langkah 40-60 detik. Siapkan kateter nelaton bersih, pelumas larut air steril (water-soluble), dan wadah penampung urine.</p>
+          </div>
+
+          <div class="guidance-card">
+            <span class="step-eyebrow">Tahap 02</span>
+            <h4>Higiene Perineal Lembut</h4>
+            <p>Bersihkan area muara saluran kemih menggunakan kassa basah air hangat matang dari arah depan ke belakang. Hindari penggunaan sabun berpewangi tajam.</p>
+          </div>
+
+          <div class="guidance-card">
+            <span class="step-eyebrow">Tahap 03</span>
+            <h4>Pelumasan Adekuat</h4>
+            <p>Oleskan jelly steril larut air secukupnya pada selang kateter (sekitar 5 cm untuk wanita, 12-15 cm untuk pria) guna mencegah gesekan pada dinding uretra.</p>
+          </div>
+
+          <div class="guidance-card">
+            <span class="step-eyebrow">Tahap 04</span>
+            <h4>Insersi, Drainase &amp; Ekstraksi</h4>
+            <p>Masukkan selang perlahan hingga urine mengalir. Saat aliran tuntas, tekan lembut perut bawah, lalu tarik kateter keluar perlahan sambil dipilin halus.</p>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#foley" class="btn-nav-prev" data-target-tab="foley">
+            &larr; Kateter Foley
+          </a>
+          <a href="#deteksi" class="btn-nav-next" data-target-tab="deteksi">
+            Lanjut: Deteksi Dini &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 05: DETEKSI DINI TANDA BAHAYA & WARNA URINE
+         ==================================================================== -->
+    <section id="deteksi" class="tab-pane" aria-labelledby="chapter-05">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Deteksi Dini Tanda Bahaya &amp; Warna Urine</h2>
+          <p class="chapter-deck">
+            Mengenali manifestasi klinis atipikal infeksi saluran kemih pada geriatri dan melakukan pemantauan makroskopis warna urine harian.
+          </p>
+        </div>
+
+        <!-- Interactive Symptom Checker Card -->
+        <span class="section-label">Alat Skrining Mandiri Tanda Bahaya ISK</span>
+        <div class="interactive-panel">
+          
+          <p class="panel-instruction-text">
+            Centang tanda atau gejala yang terlihat pada lansia di rumah saat ini untuk mengevaluasi status klinis secara seketika:
+          </p>
+
+          <div class="symptom-cards-grid">
+            
+            <label class="symptom-card-item">
+              <input type="checkbox" class="symptom-editorial-check" data-critical="true">
+              <span class="symptom-card-text"><strong>Demam tinggi (&gt;38°C) atau lansia menggigil:</strong> Indikasi infeksi sistemik akut yang memerlukan pertolongan dokter segera.</span>
+            </label>
+
+            <label class="symptom-card-item">
+              <input type="checkbox" class="symptom-editorial-check" data-critical="false">
+              <span class="symptom-card-text"><strong>Urine tampak keruh berkabut atau berbau sangat tajam:</strong> Pertumbuhan koloni kuman atau leukosituria.</span>
+            </label>
+
+            <label class="symptom-card-item">
+              <input type="checkbox" class="symptom-editorial-check" data-critical="true">
+              <span class="symptom-card-text"><strong>Urine kemerahan atau ada bekuan darah (Hematuria):</strong> Potensi luka mukosa uretra atau erosi balon.</span>
+            </label>
+
+            <label class="symptom-card-item">
+              <input type="checkbox" class="symptom-editorial-check" data-critical="false">
+              <span class="symptom-card-text"><strong>Nyeri tekan di perut bawah atau pinggang:</strong> Spasme kandung kemih atau tekanan distensi urine.</span>
+            </label>
+
+            <label class="symptom-card-item">
+              <input type="checkbox" class="symptom-editorial-check" data-critical="true">
+              <span class="symptom-card-text"><strong>Urine macet / tidak keluar &gt; 2 jam:</strong> Padahal lansia minum cukup; risiko retensi mekanik.</span>
+            </label>
+
+            <label class="symptom-card-item">
+              <input type="checkbox" class="symptom-editorial-check" data-critical="true">
+              <span class="symptom-card-text"><strong>Lansia mendadak linglung / bingung akut (Delirium):</strong> Gejala atipikal khas ISK pada pasien geriatri.</span>
+            </label>
+
+          </div>
+
+          <!-- Dynamic Output Card -->
+          <div id="symptomTriageOutput" class="triage-output-panel">
+            <div id="triageBadge" class="triage-badge-label"></div>
+            <h4 id="triageTitle" class="triage-title-text"></h4>
+            <p id="triageDesc" class="triage-desc-text"></p>
+          </div>
+
+        </div>
+
+        <!-- Panduan Visual Warna Urine Makroskopis -->
+        <span class="section-label">Panduan Visual Makroskopis Warna Urine</span>
+        <div class="urine-palette-grid">
+          
+          <div class="urine-grade-card">
+            <div class="urine-sample-bar" style="background-color: #fef08a; border-color: #fde047;"></div>
+            <span class="urine-grade-tag grade-optimal">Grade 1 &bull; Optimal</span>
+            <h4>Kuning Jerami Pucat</h4>
+            <p>Hidrasi optimal, perfusi ginjal sangat baik.</p>
+          </div>
+
+          <div class="urine-grade-card">
+            <div class="urine-sample-bar" style="background-color: #fde047; border-color: #facc15;"></div>
+            <span class="urine-grade-tag grade-normal">Grade 2 &bull; Normal</span>
+            <h4>Kuning Cerah Jernih</h4>
+            <p>Cairan tubuh adekuat dan seimbang.</p>
+          </div>
+
+          <div class="urine-grade-card">
+            <div class="urine-sample-bar" style="background-color: #eab308; border-color: #ca8a04;"></div>
+            <span class="urine-grade-tag grade-warning">Grade 3 &bull; Dehidrasi</span>
+            <h4>Kuning Tua / Madu</h4>
+            <p>Perlu tambahan minum air putih berkala.</p>
+          </div>
+
+          <div class="urine-grade-card">
+            <div class="urine-sample-bar" style="background-color: #d97706; border-color: #b45309;"></div>
+            <span class="urine-grade-tag grade-suspect">Grade 4 &bull; Suspek ISK</span>
+            <h4>Keruh &amp; Berkabut</h4>
+            <p>Terdapat endapan leukosit/nanah. Evaluasi ketat.</p>
+          </div>
+
+          <div class="urine-grade-card">
+            <div class="urine-sample-bar" style="background-color: #e11d48; border-color: #be123c;"></div>
+            <span class="urine-grade-tag grade-danger">Grade 5 &bull; Bahaya</span>
+            <h4>Kemerahan / Darah</h4>
+            <p>Hematuria / luka uretra. Segera bawa ke faskes!</p>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#cic" class="btn-nav-prev" data-target-tab="cic">
+            &larr; Edukasi CIC
+          </a>
+          <a href="#checklist" class="btn-nav-next" data-target-tab="checklist">
+            Lanjut: Lembar Kontrol &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 06: LEMBAR KONTROL HARIAN CAREGIVER
+         ==================================================================== -->
+    <section id="checklist" class="tab-pane" aria-labelledby="chapter-06">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Lembar Kontrol Harian Perawatan di Rumah</h2>
+          <p class="chapter-deck">
+            Instrumen pencatatan kepatuhan harian caregiver untuk memastikan seluruh mata rantai pencegahan infeksi kateter terpenuhi secara konsisten.
+          </p>
+        </div>
+
+        <!-- Progress Line & Action Buttons -->
+        <div class="interactive-panel">
+          
+          <div class="checklist-header-row">
+            <span id="checklistProgressText" class="checklist-progress-label">0% Terpenuhi (0 dari 8 tindakan harian)</span>
+            <div class="checklist-actions-btns no-print">
+              <button type="button" id="btnPrintChecklist" class="btn-editorial-primary">
+                Cetak Lembar A4
+              </button>
+              <button type="button" id="btnResetChecklist" class="btn-editorial-secondary">
+                Reset Hari Ini
+              </button>
+            </div>
+          </div>
+
+          <div class="checklist-progress-bar-wrap no-print">
+            <div id="checklistProgressBar" class="checklist-progress-bar-fill"></div>
+          </div>
+
+          <!-- 8 Checklist Items -->
+          <div class="editorial-rows-list">
+            
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>1. Cuci Tangan 6 Langkah Aseptik</h4>
+                <p>Mencuci tangan dengan air mengalir dan sabun selama 40-60 detik sebelum dan sesudah menyentuh selang kateter.</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>2. Pembersihan Area Meatus Kelamin (2x Sehari)</h4>
+                <p>Membersihkan lubang kemih dan selang kateter satu arah menjauhi tubuh lansia saat mandi pagi dan sore.</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>3. Verifikasi Fiksasi Selang di Paha</h4>
+                <p>Memastikan plester fiksasi terpasang dengan kelonggaran cukup sehingga tidak terjadi tarikan saat lansia bergerak.</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>4. Posisi Kantung Menggantung di Bawah Panggul</h4>
+                <p>Kantung urine selalu berada di bawah tinggi panggul, tidak diletakkan di kasur dan tidak menyentuh lantai (Asda et al., 2024).</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>5. Pemeriksaan Kelancaran Aliran (Bebas Tekukan)</h4>
+                <p>Memastikan alur selang lurus tanpa jepitan sprei atau tekukan yang dapat menghambat aliran urine.</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>6. Pengosongan Kantung Sebelum 2/3 Penuh</h4>
+                <p>Mengosongkan drainase tanpa menyentuhkan katup pembuangan ke wadah penampung limbah.</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>7. Observasi Makroskopis Warna &amp; Bau Urine</h4>
+                <p>Mencatat bila terdapat perubahan warna keruh berkabut, kemerahan, atau bau menyengat tidak lazim.</p>
+              </div>
+            </label>
+
+            <label class="story-row-item">
+              <input type="checkbox" class="editorial-task-check">
+              <div class="row-content">
+                <h4>8. Pemenuhan Kebutuhan Hidrasi Harian</h4>
+                <p>Memberikan asupan air putih teratur sepanjang hari sesuai anjuran takaran medis.</p>
+              </div>
+            </label>
+
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#deteksi" class="btn-nav-prev" data-target-tab="deteksi">
+            &larr; Deteksi Dini
+          </a>
+          <a href="#kuis" class="btn-nav-next" data-target-tab="kuis">
+            Lanjut: Evaluasi &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 07: KUIS EVALUASI (INTERACTIVE CLINICAL ASSESSMENT)
+         ==================================================================== -->
+    <section id="kuis" class="tab-pane" aria-labelledby="chapter-07">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Kuis Evaluasi Pemahaman Mandiri</h2>
+          <p class="chapter-deck">
+            Uji kesiapan Anda mendampingi lansia di rumah melalui 5 studi kasus klinis berbasis eviden. Setiap jawaban dilengkapi pembahasan ilmiah instan.
+          </p>
+        </div>
+
+        <div class="quiz-stationery-container">
+          
+          <!-- Top Meta Bar -->
+          <div class="quiz-meter">
+            <span id="quizProgressText" style="font-weight: 700; color: var(--color-primary-deep);">Pertanyaan 1 dari 5</span>
+            <span style="font-weight: 600; color: var(--color-accent);" id="quizLiveScore">Skor: 0 poin</span>
+          </div>
+
+          <div class="quiz-progress-line">
+            <div class="quiz-progress-fill" id="quizProgressFill"></div>
+          </div>
+
+          <!-- Bagian Pertanyaan Aktif -->
+          <div id="quizQuestionSection">
+            <div class="quiz-prompt-text" id="quizQuestionText">
+              <!-- Dynamically populated by app.js -->
+            </div>
+
+            <div class="choices-stack" id="quizOptionsList">
+              <!-- Choices rendered by app.js -->
+            </div>
+
+            <!-- Kotak Penjelasan Langsung -->
+            <div class="midwife-explanation-box" id="quizFeedback">
+              <h4 id="quizFeedbackTitle">Pembahasan Klinis Berbasis Eviden</h4>
+              <p id="quizFeedbackText">Penjelasan edukatif akan tampil di sini.</p>
+            </div>
+
+            <div class="quiz-nav-row">
+              <button type="button" class="btn-proceed-quiz" id="btnNextQuestion" style="display: none;">
+                Pertanyaan Berikutnya &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Tampilan Skor Hasil Kuis -->
+          <div class="score-tribute-view" id="quizResultsCard">
+            <div class="score-numeral" id="quizScoreDisplay">100%</div>
+            <div class="score-status-title" id="quizBadgeReward">
+              Luar Biasa, Pemahaman Sangat Baik!
+            </div>
+            <p class="score-appraisal" id="quizResultMessage">
+              Keren sekali! Semua prinsip dasar pencegahan infeksi kateter urine dan keselamatan lansia telah Anda kuasai dengan tepat berdasarkan bukti ilmiah terkini.
+            </p>
+
+            <div class="quiz-results-actions">
+              <button type="button" class="btn-editorial-secondary" id="btnRestartQuiz">
+                Ulangi Kuis ↺
+              </button>
+              <a href="#checklist" class="btn-editorial-secondary" data-target-tab="checklist">
+                Lembar Kontrol Harian &rarr;
+              </a>
+              <a href="#referensi" class="btn-editorial-primary" data-target-tab="referensi">
+                Lihat Kepustakaan Rujukan &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#checklist" class="btn-nav-prev" data-target-tab="checklist">
+            &larr; Lembar Kontrol
+          </a>
+          <a href="#referensi" class="btn-nav-next" data-target-tab="referensi">
+            Lanjut: Kepustakaan &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         BAB 08: KEPUSTAKAAN & REPOSITORI ILMIAH
+         ==================================================================== -->
+    <section id="referensi" class="tab-pane" aria-labelledby="chapter-08">
+      <div class="container">
+        
+        <div class="chapter-header">
+          <h2>Kepustakaan &amp; Repositori Ilmiah</h2>
+          <p class="chapter-deck">
+            Transparansi ilmiah: Seluruh kurikulum modul, panduan SOP higienitas, dan instrumen triase disusun berbasis bukti (<em>evidence-based practice</em>) dari 3 publikasi riset urologi dan keperawatan nasional terakreditasi.
+          </p>
+        </div>
+
+        <div class="bibliotheque-grid">
+          
+          <!-- Card 1: Kumala et al. (2023) -->
+          <div class="citation-card">
+            <h4>Kumala, I., Farich, A., Yanti, D.E., Hermawan, D., &amp; Amirus, K. (2023)</h4>
+            <p class="citation-full-text">
+              Kumala, I., Farich, A., Yanti, D. E., Hermawan, D., &amp; Amirus, K. (2023). Faktor risiko yang berhubungan dengan kejadian infeksi saluran kemih pada pasien yang terpasang kateter. <em>Jurnal Medika Malahayati</em>, 7(4), 1109–1116.
+            </p>
+            <div class="citation-findings-box">
+              <span class="finding-title">Intisari Temuan Klinis:</span>
+              <p>Membuktikan secara statistik korelasi kuat antara durasi lama pemakaian kateter (p=0.001) dan teknik fiksasi selang dengan angka kejadian bakteriuria patogen pada saluran kemih.</p>
+            </div>
+            <div class="citation-actions-row">
+              <a href="https://ejurnalmalahayati.ac.id/index.php/medika/article/view/12192" target="_blank" rel="noopener noreferrer" class="citation-btn">
+                Buka Jurnal Resmi ↗
+              </a>
+              <button type="button" class="btn-copy-citation" onclick="copyCitation('Kumala, I., Farich, A., Yanti, D. E., Hermawan, D., & Amirus, K. (2023). Faktor risiko yang berhubungan dengan kejadian infeksi saluran kemih pada pasien yang terpasang kateter. Jurnal Medika Malahayati, 7(4), 1109–1116.')">
+                Salin Sitasi (APA 7) 📋
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Universitas Hindu Indonesia (2023) -->
+          <div class="citation-card">
+            <h4>Universitas Hindu Indonesia Denpasar (2023)</h4>
+            <p class="citation-full-text">
+              Universitas Hindu Indonesia Denpasar. (2023). Edukasi Clean Intermittent Catheterization untuk pasien inkontinensia. <em>Jurnal Sewaka Bhakti</em>, 9(2), 142–147.
+            </p>
+            <div class="citation-findings-box">
+              <span class="finding-title">Intisari Temuan Klinis:</span>
+              <p>Menegaskan bahwa edukasi kateterisasi berkala bersih (CIC) mampu memberdayakan keluarga lansia, mencegah pembentukan biofilm kuman kronis, dan mengembalikan siklus fisiologis kandung kemih.</p>
+            </div>
+            <div class="citation-actions-row">
+              <a href="https://ejournal.unhi.ac.id/index.php/sewakabhakti/article/download/3823/2284" target="_blank" rel="noopener noreferrer" class="citation-btn">
+                Unduh Dokumen PDF ↗
+              </a>
+              <button type="button" class="btn-copy-citation" onclick="copyCitation('Universitas Hindu Indonesia Denpasar. (2023). Edukasi Clean Intermittent Catheterization untuk pasien inkontinensia. Jurnal Sewaka Bhakti, Universitas Hindu Indonesia Denpasar, 9(2), 142–147.')">
+                Salin Sitasi (APA 7) 📋
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Asda et al. (2024) -->
+          <div class="citation-card">
+            <h4>Asda, Rabiah, &amp; Maryam. (2024)</h4>
+            <p class="citation-full-text">
+              Asda, Rabiah, &amp; Maryam. (2024). Faktor-faktor risiko kejadian ISK pada pasien terpasang kateter di RSUD Undata Provinsi Sulawesi Tengah. <em>Jurnal Kolaboratif Sains</em>, 7(5), Mei 2024.
+            </p>
+            <div class="citation-findings-box">
+              <span class="finding-title">Intisari Temuan Klinis:</span>
+              <p>Menemukan bahwa penempatan kantung urine yang salah (sejajar/lebih tinggi dari panggul) memicu aliran balik (refluks) mikroorganisme dengan risiko infeksi 3.8 kali lebih besar.</p>
+            </div>
+            <div class="citation-actions-row">
+              <a href="https://jurnal.unismuhpalu.ac.id/index.php/JKS/article/view/4375" target="_blank" rel="noopener noreferrer" class="citation-btn">
+                Buka Jurnal Resmi ↗
+              </a>
+              <button type="button" class="btn-copy-citation" onclick="copyCitation('Asda, Rabiah, & Maryam. (2024). Faktor-faktor risiko kejadian ISK pada pasien terpasang kateter di RSUD Undata Provinsi Sulawesi Tengah. Jurnal Kolaboratif Sains, 7(5), Mei 2024.')">
+                Salin Sitasi (APA 7) 📋
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#kuis" class="btn-nav-prev" data-target-tab="kuis">
+            &larr; Evaluasi
+          </a>
+          <a href="#beranda" class="btn-nav-next" data-target-tab="beranda">
+            Kembali ke Beranda ↺
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Toast Notification for Citation Copy -->
+  <div id="toastNotification">Sitasi berhasil disalin ke clipboard!</div>
+
+  <!-- Colophon Footer -->
+  <footer class="colophon-footer">
+    <div class="container">
+      <p class="footer-simple-text">&copy; 2026 Edukasi Perawatan Kateter Lansia &bull; Berbasis Sintesis 3 Riset Medis Nasional Terakreditasi</p>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button for Mobile / Long Reading -->
+  <button type="button" id="btnBackToTop" class="btn-floating-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
