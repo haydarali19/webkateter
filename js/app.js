@@ -220,6 +220,8 @@ let scoreCount = 0;
 let userHasChosen = false;
 
 function initStationeryQuiz() {
+  const qSection = document.getElementById('quizQuestionSection');
+  if (!qSection) return;
   renderQuestion(currentQIdx);
 
   const btnNext = document.getElementById('btnNextQuestion');
