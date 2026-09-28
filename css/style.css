@@ -1,7 +1,7 @@
 /* ==========================================================================
    CareKateter Lansia — High-End Editorial Healthcare Design System
    Prinsip: Amati, Tiru, Modifikasi (ATM) dari Webkegel
-   - Palet Baru: Oxford Navy (#1E3A5F) & Warm Terracotta (#C2410C) di atas Alabaster (#F8F9FA)
+   - Palet Baru: Biru Awan (#0284C7) & Warm Terracotta (#C2410C) di atas Alabaster (#F8F9FA)
    - Layout: 2x2 Grid untuk Faktor Risiko, Slogan Refleksi Bersih, Navigasi Tab Segmented
    ========================================================================== */
 
@@ -17,13 +17,13 @@
   --color-sand-border: #DDE2E6;
   --color-sand-dark: #CED4DA;
 
-  /* Primary Palette: Oxford Navy & Royal Slate (Authoritative & Calming) */
-  --color-primary: #1E3A5F;
-  --color-primary-deep: #0F2238;
-  --color-primary-light: #2D5584;
-  --color-primary-soft: #EEF4FA;
-  --color-primary-surface: #F4F8FC;
-  --color-primary-border: #CBDDF0;
+  /* Primary Palette: Biru Awan (Cloud Sky Blue - Fresh, Calming & Modern) */
+  --color-primary: #0284C7;
+  --color-primary-deep: #0369A1;
+  --color-primary-light: #38BDF8;
+  --color-primary-soft: #F0F9FF;
+  --color-primary-surface: #F4FAFF;
+  --color-primary-border: #BAE6FD;
 
   /* Accent Palette: Warm Terracotta / Sienna Clay (Distinct, Warm & Caring) */
   --color-accent: #C2410C;
@@ -64,10 +64,10 @@
   --radius-xl: 28px;
   --radius-pill: 9999px;
 
-  /* Elevation Shadows */
-  --shadow-subtle: 0 1px 3px rgba(30, 58, 95, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
-  --shadow-card: 0 4px 16px -2px rgba(30, 58, 95, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
-  --shadow-elevated: 0 12px 28px -4px rgba(30, 58, 95, 0.09), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
+  /* Elevation Shadows (Infused with Subtle Cloud Sky Tint) */
+  --shadow-subtle: 0 1px 3px rgba(2, 132, 199, 0.06), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 16px -2px rgba(2, 132, 199, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  --shadow-elevated: 0 12px 28px -4px rgba(2, 132, 199, 0.10), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
 
   /* Transitions */
   --transition-smooth: 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -105,9 +105,9 @@ body {
   width: 100%;
   -webkit-tap-highlight-color: transparent;
   background-image: 
-    radial-gradient(circle at 8% 12%, rgba(203, 221, 240, 0.45) 0%, transparent 28%),
+    radial-gradient(circle at 8% 12%, rgba(186, 230, 253, 0.45) 0%, transparent 28%),
     radial-gradient(circle at 92% 75%, rgba(194, 65, 12, 0.04) 0%, transparent 32%),
-    radial-gradient(circle at 50% 90%, rgba(30, 58, 95, 0.03) 0%, transparent 40%);
+    radial-gradient(circle at 50% 90%, rgba(2, 132, 199, 0.04) 0%, transparent 40%);
   background-attachment: fixed;
 }
 
@@ -168,7 +168,7 @@ button {
   right: 0;
   z-index: 100;
   border-bottom: 1px solid var(--color-sand-border);
-  box-shadow: 0 2px 8px rgba(30, 58, 95, 0.04);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.05);
 }
 
 .site-header .container {
@@ -202,7 +202,7 @@ button {
   justify-content: center;
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 2px 6px rgba(30, 58, 95, 0.18);
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
   color: #FFFFFF;
 }
 
@@ -304,7 +304,7 @@ button {
   color: #FFFFFF;
   background: var(--color-primary-deep);
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(15, 34, 56, 0.2);
+  box-shadow: 0 2px 6px rgba(3, 105, 161, 0.28);
 }
 
 /* Tablet Segmented Track (769px - 1024px) */
@@ -343,7 +343,7 @@ button {
 @media (max-width: 768px) {
   .site-header {
     border-bottom: 1px solid var(--color-sand-border);
-    box-shadow: 0 2px 10px rgba(15, 34, 56, 0.05);
+    box-shadow: 0 2px 10px rgba(3, 105, 161, 0.06);
   }
 
   .site-header .container,
@@ -382,7 +382,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 6px rgba(30, 58, 95, 0.16);
+    box-shadow: 0 2px 6px rgba(2, 132, 199, 0.22);
   }
 
   .brand-emblem-logo svg {
@@ -432,7 +432,7 @@ button {
     cursor: pointer;
     touch-action: manipulation;
     transition: all var(--transition-smooth);
-    box-shadow: 0 2px 6px rgba(15, 34, 56, 0.18);
+    box-shadow: 0 2px 6px rgba(3, 105, 161, 0.25);
   }
 
   .btn-mobile-menu:hover,
@@ -484,7 +484,7 @@ button {
     background: #FFFFFF;
     border-top: 1px solid var(--color-sand-border);
     border-bottom: 3px solid var(--color-primary-deep);
-    box-shadow: 0 16px 36px rgba(15, 34, 56, 0.22);
+    box-shadow: 0 16px 36px rgba(3, 105, 161, 0.20);
     max-height: calc(100vh - 70px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -547,7 +547,7 @@ button {
     background: var(--color-primary-deep) !important;
     color: #FFFFFF !important;
     border-color: var(--color-primary-deep) !important;
-    box-shadow: 0 3px 8px rgba(15, 34, 56, 0.22);
+    box-shadow: 0 3px 8px rgba(3, 105, 161, 0.25);
     font-weight: 700;
   }
 
@@ -561,7 +561,7 @@ button {
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(15, 34, 56, 0.45);
+    background: rgba(7, 89, 133, 0.45);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     z-index: 95;
@@ -615,11 +615,11 @@ button {
   background: linear-gradient(135deg, var(--color-primary-deep) 0%, var(--color-primary) 100%);
   color: #FFFFFF;
   border: 1px solid transparent;
-  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.22);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
 }
 
 .btn-nav-next:hover {
-  box-shadow: 0 6px 18px rgba(30, 58, 95, 0.32);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
   transform: translateY(-2px);
   color: #FFFFFF;
 }
@@ -706,13 +706,13 @@ button {
   border-radius: var(--radius-pill);
   font-weight: 600;
   font-size: 0.98rem;
-  box-shadow: 0 4px 14px rgba(30, 58, 95, 0.25);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
   transition: all var(--transition-smooth);
 }
 
 .btn-editorial-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(30, 58, 95, 0.35);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
   color: #FFFFFF;
 }
 
@@ -1143,8 +1143,8 @@ button {
   height: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: #0F2238;
-  box-shadow: 0 6px 20px rgba(15, 34, 56, 0.16);
+  background: #075985;
+  box-shadow: 0 6px 20px rgba(3, 105, 161, 0.18);
   cursor: pointer;
 }
 
@@ -1168,7 +1168,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(15, 34, 56, 0.82);
+  background: rgba(7, 89, 133, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius-pill);
   padding: 0.65rem 1.4rem;
@@ -1378,13 +1378,13 @@ button {
   border-radius: var(--radius-pill);
   font-size: 0.95rem;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.25);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
   transition: all var(--transition-smooth);
 }
 
 .btn-proceed-quiz:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(30, 58, 95, 0.35);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
 }
 
 .score-tribute-view {
@@ -1618,7 +1618,7 @@ button {
 
 .symptom-card-item:has(input:checked) {
   border-color: var(--color-primary);
-  background-color: rgba(30, 58, 95, 0.05);
+  background-color: rgba(2, 132, 199, 0.08);
   box-shadow: var(--shadow-subtle);
 }
 
@@ -1798,7 +1798,7 @@ button {
 
 .story-row-item:has(input:checked) {
   border-color: var(--color-primary);
-  background-color: rgba(30, 58, 95, 0.05);
+  background-color: rgba(2, 132, 199, 0.08);
   box-shadow: var(--shadow-subtle);
 }
 
@@ -1850,7 +1850,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(15, 34, 56, 0.35);
+  box-shadow: 0 4px 14px rgba(3, 105, 161, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.15);
   cursor: pointer;
   z-index: 99;
