@@ -10,6 +10,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initEditorialNavigation();
+  initVideoFacade();
   initStationeryQuiz();
   initDailyChecklist();
   initSymptomChecker();
@@ -56,6 +57,11 @@ function initEditorialNavigation() {
   function navigateToChapter(targetChapterId) {
     // Tutup menu drawer mobile jika terbuka
     closeMobileMenu();
+
+    // Otomatis pause video jika berpindah ke bab lain
+    if (targetChapterId !== 'kuis') {
+      pauseVideoIfPlaying();
+    }
 
     // Perbarui tombol tab aktif
     chapterButtons.forEach(btn => {
@@ -155,7 +161,75 @@ function initEditorialNavigation() {
 }
 
 /* ==========================================================================
-   2. KUIS EVALUASI PEMAHAMAN MANDIRI (ENHANCED CLINICAL ASSESSMENT)
+   2. VIDEO EDUKASI HIGH-DEF FACADE & AUTO-PAUSE
+   ========================================================================== */
+function pauseVideoIfPlaying() {
+  const iframe = document.getElementById('ytPlayerIframe');
+  if (iframe && iframe.contentWindow) {
+    try {
+      iframe.contentWindow.postMessage(
+        JSON.stringify({ event: 'command', func: 'pauseVideo', args: '' }),
+        '*'
+      );
+    } catch (e) {
+      // Abaikan jika cross-origin atau frame belum siap
+    }
+  }
+}
+
+function initVideoFacade() {
+  const wrapper = document.getElementById('videoFacadeWrapper');
+  if (!wrapper) return;
+
+  const videoId = wrapper.dataset.videoId || '3Fu95KzDtsc';
+
+  function launchVideo() {
+    if (wrapper.querySelector('iframe')) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0`;
+    iframe.title = 'Video Edukasi Praktik Perawatan Kateter Urine';
+    iframe.frameBorder = '0';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    iframe.id = 'ytPlayerIframe';
+
+    wrapper.innerHTML = '';
+    wrapper.appendChild(iframe);
+  }
+
+  wrapper.addEventListener('click', launchVideo);
+  wrapper.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      launchVideo();
+    }
+  });
+
+  // Auto-pause video saat di-scroll keluar layar (viewport < 15%)
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || entry.intersectionRatio < 0.15) {
+          pauseVideoIfPlaying();
+        }
+      });
+    }, { threshold: [0, 0.15] });
+
+    videoObserver.observe(wrapper);
+  }
+
+  // Auto-pause video jika tab browser diminimize atau user pindah aplikasi
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      pauseVideoIfPlaying();
+    }
+  });
+}
+
+/* ==========================================================================
+   3. KUIS EVALUASI PEMAHAMAN MANDIRI (ENHANCED CLINICAL ASSESSMENT - FALLBACK)
    ========================================================================== */
 const quizQuestions = [
   {

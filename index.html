@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css?v=2.8">
+  <link rel="stylesheet" href="css/style.css?v=2.9">
 </head>
 <body>
 
@@ -730,15 +730,20 @@
         </div>
 
         <div class="video-card-container">
-          <div class="video-embed-wrapper">
-            <iframe 
-              src="https://www.youtube.com/embed/3Fu95KzDtsc" 
-              title="Video Edukasi Praktik Perawatan Kateter Urine" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+          <div class="video-facade-wrapper" id="videoFacadeWrapper" data-video-id="3Fu95KzDtsc" role="button" tabindex="0" aria-label="Putar Video Edukasi Perawatan Kateter Urine">
+            <img 
+              src="https://img.youtube.com/vi/3Fu95KzDtsc/maxresdefault.jpg" 
+              alt="Thumbnail HD Video Edukasi Perawatan Kateter Urine" 
+              class="video-facade-poster"
+              loading="lazy"
+            />
+            <div class="btn-video-facade-play">
+              <svg viewBox="0 0 68 48" class="yt-play-icon" aria-hidden="true">
+                <path class="yt-play-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"/>
+                <path class="yt-play-triangle" d="M 45,24 27,14 27,34"/>
+              </svg>
+              <span class="btn-play-caption">Putar Video HD</span>
+            </div>
           </div>
 
           <div class="video-meta-box">
@@ -875,6 +880,6 @@
     </svg>
   </button>
 
-  <script src="js/app.js?v=2.8"></script>
+  <script src="js/app.js?v=2.9"></script>
 </body>
 </html>
